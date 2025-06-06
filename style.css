@@ -69,3 +69,67 @@ html, body{
     background-color: rgb(255, 98, 0);
     box-shadow: 2.5px 2.5px 2px #00091a,-1px -1px 4px #ffa600;
 }
+
+/* ========== Responsive Design ========== */
+
+@media (max-width: 1024px) {
+    .calculator .main {
+        width: 40%;
+    }
+
+    .btns {
+        height: 2.5rem;
+        width: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .display {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .calculator .main {
+        width: 60%;
+        padding: 1rem;
+    }
+
+    .btns {
+        height: 2.2rem;
+        width: 2.2rem;
+        font-size: 1rem;
+    }
+
+    .display {
+        font-size: 1rem;
+        text-indent: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator .main {
+        width: 95%;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .button-section {
+        gap: 0.8rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .btns {
+        height: 3.2rem;
+        width: 3.2rem;
+        font-size: 1.2rem;
+        margin-right: 0;
+    }
+
+    .display {
+        font-size: 1.4rem;
+        padding: 0.8rem;
+        height: 3rem;
+    }
+}
