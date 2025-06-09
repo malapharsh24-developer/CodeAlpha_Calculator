@@ -9,7 +9,11 @@ btns.forEach((btn)=>{
         if(display.value == 0){
             display.value = "";
         }
+<<<<<<< HEAD
         display.value +=  e.target.value;
+=======
+        display.value += e.target.value;
+>>>>>>> 4136bf0cf5e63ef6f3b541f14d6d1bef4c4f2a8b
     });
 });
 
