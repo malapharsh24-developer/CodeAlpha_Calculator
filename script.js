@@ -6,6 +6,9 @@ const reset = document.querySelector('#reset-btn');
 btns.forEach((btn)=>{
     btn.addEventListener("click",(e)=>{
         console.log(e.target.value);
+        if(display.value == 0){
+            display.value = "";
+        }
         display.value += e.target.value;
     });
 });
